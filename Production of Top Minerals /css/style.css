@@ -1,0 +1,96 @@
+/* set default styles for body */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* container that holds all visualizations */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* style for the main title */
+h1 {
+  margin-top: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2rem;
+  word-spacing: 0.15em;
+  text-align: center;
+}
+
+/* container for individual charts */
+.chart-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* legend container styles */
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* individual legend item */
+.legend-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+/* change opacity when hovering over legend */
+.legend-item:hover {
+  opacity: 0.7;
+}
+
+/* colored box representing a legend item */
+.legend-color {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* text for legend items */
+.legend-text {
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+/* tooltip for displaying data on hover */
+#tooltip {
+  position: absolute;
+  display: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  padding: 8px;
+  color: #333;
+}
+
+/* subheader styles for section descriptions */
+.subheader {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  color: #555;
+  text-align: center;
+  margin-top: -10px; 
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
